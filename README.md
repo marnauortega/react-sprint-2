@@ -20,7 +20,7 @@ Optimitza els fitxers per a reduir espai i fa servir hashes als noms per possibi
 
 ## Estructura
 
-Per a cada nivell hi ha una carpeta, i per a cada exercici hi ha un commit. He afegit un nivell Bonus, en què també he afegit el menú per a mobile i animacions fade-in.
+Per a cada exercici hi ha un commit. He afegit un nivell Bonus, en què també he afegit el menú per a mobile i animacions fade-in.
 
 ## Dubtes
 
