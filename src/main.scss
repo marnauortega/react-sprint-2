@@ -13,6 +13,10 @@ $display-font-weight: 700;
 
 /* --- NAVBAR --- */
 
+$link-hover-color: $secondary;
+$nav-link-hover-color: $secondary;
+$navbar-light-hover-color: $secondary;
+
 $font-size-base: 1.15rem;
 
 $nav-link-font-size: 0.85rem;
@@ -29,6 +33,7 @@ $btn-font-size: 0.9rem;
 $btn-font-weight: 500;
 $btn-box-shadow: 0px 4px 6px 0px rgba(82, 101, 225, 0.25);
 $enable-shadows: true;
+$btn-border-width: 2px;
 
 /* --- CARDS (EXTENSION) --- */
 
@@ -53,6 +58,7 @@ $accordion-button-active-color: #51545c;
 
 $input-font-size: $nav-link-font-size;
 $form-feedback-invalid-color: $secondary;
+$form-feedback-icon-invalid: url("/src/images/icon-error.svg");
 $input-placeholder-color: rgb(176, 176, 176);
 $form-feedback-valid-color: transparent;
 
@@ -134,6 +140,24 @@ nav .btn-secondary {
 }
 
 .btn-light {
+  color: $dark;
+}
+
+.btn.btn-primary:hover {
+  border: 2px solid $primary;
+  background-color: white;
+  color: $primary;
+}
+
+.btn.btn-secondary:hover {
+  border: 2px solid $secondary;
+  background-color: white;
+  color: $secondary;
+}
+
+.btn.btn-light:hover {
+  border: 2px solid $dark;
+  background-color: white;
   color: $dark;
 }
 
@@ -238,6 +262,10 @@ h3 {
   }
 }
 
+.accordion-button:hover {
+  color: $secondary;
+}
+
 .accordion-body {
   font-size: 1rem;
   line-height: 2.25rem;
@@ -286,7 +314,15 @@ input[type="email"] {
     color: white;
   }
 
+  .nav-link:hover {
+    color: $secondary;
+  }
+
   svg {
     fill: white;
+  }
+
+  svg:hover {
+    fill: $secondary;
   }
 }
