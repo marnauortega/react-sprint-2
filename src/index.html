@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="main.scss" />
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="images/favicon.png" sizes="any" />
+
+    <title>Maquetació 2</title>
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+
+    <nav class="navbar navbar-expand-lg py-2 py-lg-3 px-2 px-xl-5 section">
+      <div id="nav-container" class="container-fluid px-0">
+        <a class="navbar-brand" href="#">
+          <img
+            id="nav-logo"
+            src="images/logo.svg"
+            alt=""
+            width="auto"
+            height="24"
+            class="align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span id="hamb-btn" class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto text-uppercase d-flex gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-secondary text-uppercase">
+                Login
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+
+    <div class="container-fluid pt-3 pb-4 overflow-hidden section" id="hero">
+      <div class="row flex-lg-row-reverse gy-4">
+        <div class="col-lg-6 px-2 pe-xl-5 position-relative">
+          <div class="background-shape shape-right bg-primary"></div>
+          <img
+            id="hero-image"
+            class="position-relative"
+            src="images/illustration-hero.svg"
+            alt=""
+          />
+        </div>
+        <div class="col-lg-6 px-2 ps-xl-5 pe-lg-4 d-flex align-items-center">
+          <div class="text-center text-lg-start">
+            <h1 class="display-5 text-capitalize">A simple bookmark manager</h1>
+            <p class="text-muted">
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+            <div class="btn btn-primary">Get it on chrome</div>
+            <div class="btn btn-light">Get it on firefox</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./index.js" defer></script>
+  </body>
+</html>

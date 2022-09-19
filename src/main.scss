@@ -1,0 +1,130 @@
+/* ----------------------------- 
+        CUSTOM VARIABLES 
+----------------------------- */
+
+$spacer: 3.25rem;
+
+$primary: #5265e1;
+$secondary: #fa5959;
+$dark: #5c5f68;
+$text-muted: #afb0b3;
+
+$display-font-weight: 700;
+
+/* --- NAVBAR --- */
+
+$font-size-base: 1.15rem;
+
+$nav-link-font-size: 0.85rem;
+$navbar-light-color: rgb(80, 80, 80);
+$navbar-light-toggler-icon-bg: url("/src/images/icon-hamburger.svg");
+$navbar-light-toggler-border-color: transparent;
+$navbar-toggler-padding-x: 0;
+
+// /* --- BUTTONS --- */
+
+$btn-padding-y: 0.75rem;
+$btn-padding-x: 1.5rem;
+$btn-font-size: 0.9rem;
+$btn-font-weight: 500;
+$btn-box-shadow: 0px 4px 6px 0px rgba(82, 101, 225, 0.25);
+$enable-shadows: true;
+
+/* --- BOOTSTRAP --- */
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+/* -----------------------------
+        CUSTOM SCSS
+------------------------------- */
+
+@include media-breakpoint-down(sm) {
+  p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+
+p {
+  margin-bottom: 1.75rem;
+}
+
+/* --- NAVBAR --- */
+
+.navbar-toggler-icon {
+  height: 1.1rem;
+  width: 1.1rem;
+  vertical-align: top;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+nav .btn-secondary {
+  padding: 0.5rem 1.9rem;
+}
+
+/* --- HERO --- */
+
+#hero-image {
+  width: 113.5%;
+}
+
+#hero-image,
+.feature-image {
+  max-width: 650px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* --- SHAPE --- */
+
+.background-shape {
+  position: absolute;
+  height: 83%;
+  width: 75%;
+  top: 30%;
+}
+
+.shape-right {
+  right: 0;
+  border-radius: 150px 0 0 150px;
+}
+
+.shape-left {
+  left: 0;
+  border-radius: 0 150px 150px 0;
+}
+
+/* --- BUTTONS --- */
+
+.btn-secondary {
+  font-size: 0.85rem;
+  color: white;
+}
+
+.btn-light {
+  color: $dark;
+}
+
+@media (max-width: 335px) {
+  #hero .btn {
+    display: block;
+    margin: 0 0 1rem 0;
+  }
+}
+
+@media (min-width: 336px) {
+  #hero .btn {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  #hero .btn:first-of-type {
+    margin-right: 1rem;
+  }
+}
