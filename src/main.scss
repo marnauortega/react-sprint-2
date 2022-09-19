@@ -38,6 +38,17 @@ $card-spacer-x: 1.5rem;
 $card-border-radius: 15px;
 $card-box-shadow: 0px 5px 10px 0px rgba(82, 101, 225, 0.15);
 
+/* --- ACCORDION (FAQ) --- */
+
+$accordion-button-icon: url("/src/images/icon-arrow.svg");
+$accordion-button-active-icon: url("/src/images/icon-arrow-close.svg");
+$accordion-button-active-bg: transparent;
+$accordion-button-focus-box-shadow: none;
+$accordion-button-active-color: black;
+$accordion-color: #7c7c80;
+$accordion-button-color: #51545c;
+$accordion-button-active-color: #51545c;
+
 /* --- BOOTSTRAP --- */
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
@@ -210,4 +221,17 @@ h3 {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+}
+
+/* --- ACCORDION (FAQ) --- */
+
+@include media-breakpoint-down(sm) {
+  .accordion-button {
+    font-size: 1rem;
+  }
+}
+
+.accordion-body {
+  font-size: 1rem;
+  line-height: 2.25rem;
 }
