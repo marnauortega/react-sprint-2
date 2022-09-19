@@ -33,3 +33,5 @@ Per a cada exercici hi ha un commit. He afegit un nivell Bonus, en què també h
 ### JS
 
 - Com puc fer que a un document js pugui referenciar una string que conté un path i que quan Parcel faci el bundle la reescrigui.
+
+- Quan faig `npm run build` s'hauria de poder veure la pàgina? Perquè cal generar un servidor? Quina funció fa el servidor?
