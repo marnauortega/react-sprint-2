@@ -21,7 +21,7 @@ $navbar-light-toggler-icon-bg: url("/src/images/icon-hamburger.svg");
 $navbar-light-toggler-border-color: transparent;
 $navbar-toggler-padding-x: 0;
 
-// /* --- BUTTONS --- */
+/* --- BUTTONS --- */
 
 $btn-padding-y: 0.75rem;
 $btn-padding-x: 1.5rem;
@@ -126,5 +126,80 @@ nav .btn-secondary {
 
   #hero .btn:first-of-type {
     margin-right: 1rem;
+  }
+}
+
+/* --- CENTERED ELEMENTS --- */
+
+.middle {
+  max-width: 34rem;
+  margin: auto;
+  text-align: center;
+}
+
+/* --- TAB (EXTENSION) --- */
+
+#myTab {
+  padding-right: 0;
+
+  .nav-item {
+    width: 100%;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .nav-item:first-of-type {
+    border-top: 1px solid #dee2e6;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    width: auto;
+    margin: auto;
+    color: #6c757d;
+    padding: 1.5rem 0;
+    text-transform: capitalize;
+    border-bottom: 4px solid transparent;
+  }
+
+  @include media-breakpoint-up(lg) {
+    .nav-item:first-of-type {
+      border-top: none;
+    }
+
+    .nav-item {
+      width: calc(100% / 3);
+    }
+
+    .nav-link {
+      width: 100%;
+    }
+  }
+
+  .nav-link:hover {
+    color: $secondary;
+  }
+
+  .active {
+    border-bottom: 4px solid $secondary;
+    background-color: transparent;
+    border-radius: 0;
+    color: black;
+  }
+}
+
+.feature-image {
+  height: 350px;
+}
+
+h3 {
+  font-size: $nav-link-font-size;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+@include media-breakpoint-down(md) {
+  #myTab .nav-link {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
