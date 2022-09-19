@@ -256,18 +256,34 @@ h3 {
 
 /* --- CARDS (EXTENSION) --- */
 
-@include media-breakpoint-up(lg) {
-  $multiplier: 2.5;
+$multiplier: 2.5;
 
-  .cards > div {
-    &:nth-of-type(1) {
-      margin-top: calc($multiplier * 1rem);
-    }
-    &:nth-of-type(2) {
-      margin-top: calc($multiplier * 2rem);
-    }
-    &:nth-of-type(3) {
-      margin-top: calc($multiplier * 3rem);
+/* --- 1st Method --- */
+
+// @include media-breakpoint-up(lg) {
+
+//   .cards > div {
+//     &:nth-of-type(1) {
+//       margin-top: calc($multiplier * 1rem);
+//     }
+//     &:nth-of-type(2) {
+//       margin-top: calc($multiplier * 2rem);
+//     }
+//     &:nth-of-type(3) {
+//       margin-top: calc($multiplier * 3rem);
+//     }
+//   }
+// }
+
+/* --- 2nd Method --- */
+
+// Total number of cards
+$margins: 3;
+
+@include media-breakpoint-up(lg) {
+  @for $margin from 1 through $margins {
+    .cards > div:nth-of-type(#{$margin}) {
+      margin-top: calc(#{$multiplier} * #{$margin}rem);
     }
   }
 }
