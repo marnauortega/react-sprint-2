@@ -1,5 +1,7 @@
 # Maquetació II
 
+![Screenshot](screenshot.png)
+
 Bootstrap responsive landing page using [Parcel](https://parceljs.org/) as bundler. Minimal use of [GSAP](https://greensock.com/3/) for fade in animations. The design isn't mine. This is an assignment of the IT Academy course to practice Bootstrap and Sass.
 
 ## Structure
