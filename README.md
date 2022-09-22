@@ -1,37 +1,22 @@
 # Maquetació II
 
-Projecte realitzat amb [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) i [Parcel](https://parceljs.org/) com a bundler. Faig servir mínimament [GSAP](https://greensock.com/3/).
+Bootstrap responsive landing page using [Parcel](https://parceljs.org/) as bundler. Minimal use of [GSAP](https://greensock.com/3/) for fade in animations. The design isn't mine. This is an assignment of the IT Academy course to practice Bootstrap and Sass.
 
-## Scripts disponibles
+## Structure
+
+There's a commit for each exercice. I added a Bonus, in which I've added a mobile menu and fade-in animations.
+
+## Available Scripts
 
 ```
 npm run dev
 ```
 
-Posa en marxa la web en mode de desenvolupament.
-Es pot consultar l'adreça http://localhost:1234 per obrir-la al navegador.
+It runs the site on development mode and sets a local server at http://localhost:1234 to visit the site.
 
 ```
 npm run build
 ```
 
-Genera la pàgina per a producció a la carpeta `dist`.
-Optimitza els fitxers per a reduir espai i fa servir hashes als noms per possibilitar millor caching.
-
-## Estructura
-
-Per a cada exercici hi ha un commit. He afegit un nivell Bonus, en què també he afegit el menú per a mobile i animacions fade-in.
-
-## Dubtes
-
-### Bootstrap
-
-1. Es pot modificar la font-size de tots els p? O es pot modificar el padding de tots els .btn?
-
-2. El resultat no és gens DRY perquè es repeteixen classes constantment.
-
-### JS
-
-3. Com puc fer que a un document js pugui referenciar una string que conté un path i que quan Parcel faci el bundle la reescrigui.
-
-4. Quan faig `npm run build` s'hauria de poder veure la pàgina? Perquè cal generar un servidor? Quina funció fa el servidor?
+It generates all assets for deployment in the `dist` folder.
+The files are optimized to reduce space and hashes are employed in filenames to improve chaching.
